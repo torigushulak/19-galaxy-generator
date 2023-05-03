@@ -198,6 +198,9 @@ const clock = new THREE.Clock();
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
 
+//   update galaxy / make it rotate
+    points.rotation.y = elapsedTime * 0.1
+
   // Update controls
   controls.update();
 
